@@ -21,6 +21,4 @@ curl -s -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-i
 
 
 export CGO_ENABLED=0
-
-echo '[[ -s "/root/.gvm/scripts/gvm" ]] && source "/root/.gvm/scripts/gvm"' >> /etc/drydock/.env
 /u14golall/go_install.sh
