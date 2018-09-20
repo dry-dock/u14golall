@@ -2,17 +2,16 @@
 
 #set the source path of gvm. $HOME points to '/root'
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source $HOME/.gvm/scripts/gvm
-export  CGO_ENABLED=0
+export CGO_ENABLED=0
 
-
-gvm install go1.4 && gvm use go1.4 && go install -a std && go get -u github.com/tools/godep
-
-
-declare -a versions=( '1.9.7' '1.10.3' )
+declare -a versions=( '1.10.4' '1.11' )
 for version in "${versions[@]}"
   do
-     echo "================= Install Go $version==================="
-     gvm use go1.4
-     export GOROOT_BOOTSTRAP=$GOROOT
-     gvm install go$version && gvm use go$version && go install -a std && go get -u github.com/tools/godep
+    echo "================= Install Go $version==================="
+    export GOROOT_BOOTSTRAP=$GOROOT
+    gvm install go$version --prefer-binary
+    source /root/.gvm/scripts/gvm
+    gvm use go$version
+    go install -a std
+    go get -u github.com/tools/godep
 done
