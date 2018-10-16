@@ -3,7 +3,7 @@ u14golall
 
 Shippable CI image for Go on Ubuntu 14.04 with all services available. Available versions are:
 
-1. 1.11
+1. 1.11.1
 2. 1.10.4
 
 **Services:**
