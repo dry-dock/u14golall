@@ -3,7 +3,7 @@
 #set the source path of gvm. $HOME points to '/root'
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source $HOME/.gvm/scripts/gvm
 
-declare -a versions=( '1.10.4' '1.11.1' )
+declare -a versions=( '1.10.5' '1.11.2' )
 for version in "${versions[@]}"
   do
     echo "######### Testing Go$version ###################"
