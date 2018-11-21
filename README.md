@@ -3,8 +3,11 @@ u14golall
 
 Shippable CI image for Go on Ubuntu 14.04 with all services available. Available versions are:
 
-1. 1.11.1
-2. 1.10.4
+1. 1.10.5
+2. 1.11.2
 
+u14golall Docker Hub repo: [drydock/u14golall](https://hub.docker.com/r/drydock/u14golall/)
+  
 **Services:**
-use this link https://github.com/dry-dock/u14all to refer to the versions of the services
+
+Please refer [u14all](https://github.com/dry-dock/u14all) for a list of supported services
